@@ -13,7 +13,7 @@
     "rpc-password": "admin",
     "rpc-port": 9091,
     "rpc-username": "admin",
-    "rpc-whitelist": "127.0.0.1",
+    "rpc-whitelist": "127.0.0.1,@AS_NAS_INET4_ADDR@",
     "upload-limit": 100,
     "upload-limit-enabled": false
 }
