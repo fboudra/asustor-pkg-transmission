@@ -1,0 +1,19 @@
+{
+    "blocklist-enabled": false,
+    "download-dir": "/volume1/Download",
+    "download-limit": 100,
+    "download-limit-enabled": false,
+    "encryption": 1,
+    "incomplete-dir": "/volume1/Download",
+    "max-peers-global": 240,
+    "peer-port": 51413,
+    "pex-enabled": true,
+    "port-forwarding-enabled": true,
+    "rpc-authentication-required": true,
+    "rpc-password": "admin",
+    "rpc-port": 9091,
+    "rpc-username": "admin",
+    "rpc-whitelist": "127.0.0.1",
+    "upload-limit": 100,
+    "upload-limit-enabled": false
+}
