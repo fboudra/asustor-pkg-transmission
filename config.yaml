@@ -1,0 +1,32 @@
+general:
+  package: 'transmission'
+  name: 'Transmission'
+  version: '2.92-1'
+  depends: []
+  conflicts: []
+  developer: 'The Transmission Project'
+  email: 'fboudra+adm@gmail.com'
+  website: 'https://www.transmissionbt.com/'
+  architecture: 'x86-64'
+  firmware: '2.5.0'
+  maintainer: 'Fathi Boudra'
+  model:
+  - '50xx'
+  - '51xx'
+adm-desktop:
+  app:
+    type: 'custom'
+    protocol: 'http'
+    port: 9091
+    url: '/'
+  privilege:
+    accessible: 'users'
+    customizable: true
+register:
+  prerequisites:
+    enable-service: [httpd]
+    restart-service: [httpd]
+  boot-priority:
+    start-order: 20
+    stop-order: 80
+  port: [9091]

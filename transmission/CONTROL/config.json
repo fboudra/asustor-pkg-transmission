@@ -1,0 +1,48 @@
+{
+  "register": {
+    "prerequisites": {
+      "enable-service": [
+        "httpd"
+      ],
+      "restart-service": [
+        "httpd"
+      ]
+    },
+    "boot-priority": {
+      "stop-order": 80,
+      "start-order": 20
+    },
+    "port": [
+      9091
+    ]
+  },
+  "adm-desktop": {
+    "privilege": {
+      "accessible": "users",
+      "customizable": true
+    },
+    "app": {
+      "url": "/",
+      "type": "custom",
+      "protocol": "http",
+      "port": 9091
+    }
+  },
+  "general": {
+    "website": "https://www.transmissionbt.com/",
+    "maintainer": "Fathi Boudra",
+    "name": "Transmission",
+    "package": "transmission",
+    "firmware": "2.5.0",
+    "depends": [],
+    "version": "2.92-1",
+    "architecture": "x86-64",
+    "conflicts": [],
+    "model": [
+      "50xx",
+      "51xx"
+    ],
+    "email": "fboudra+adm@gmail.com",
+    "developer": "The Transmission Project"
+  }
+}
