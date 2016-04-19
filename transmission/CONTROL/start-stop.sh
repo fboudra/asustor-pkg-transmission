@@ -16,8 +16,8 @@ TRANSMISSION_WEB_HOME=${APKG_PKG_DIR}/www
 #  UDP Failed to set receive buffer
 #  UDP Failed to set sent buffer
 # Set bigger sent and receive buffer
-${AS_SYSCTL} -w net.core.rmem_max = 16777216
-${AS_SYSCTL} -w net.core.wmem_max = 4194304
+${AS_SYSCTL} -w net.core.rmem_max=16777216
+${AS_SYSCTL} -w net.core.wmem_max=4194304
 
 case "$1" in
     start)
